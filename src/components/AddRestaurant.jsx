@@ -20,7 +20,7 @@ function AddRestaurant({ updateRestaurants }) {
   };
 
   return (
-    <form data-cy="form-submit" onSubmit={handleSubmit}>
+    <form data-cy="rating-form" onSubmit={handleSubmit}>
       <div>
         <label>Name:</label>
         <input
@@ -83,7 +83,7 @@ function AddRestaurant({ updateRestaurants }) {
         />
       </div>
 
-      <button type="submit">Submit</button>
+      <button type="submit" onClick={handleSubmit}>Submit</button>
     </form>
   );
 }
